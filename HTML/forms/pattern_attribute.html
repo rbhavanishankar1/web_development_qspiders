@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up form</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>NAME</td>
+                <td>:</td>
+                <td><input type="text" name="name" id="name" pattern="[A-Za-z]+{3,30}" title="min 3 max 15 characters">
+                </td>
+            </tr>
+            <tr>
+                <td>PHONE NUMBER</td>
+                <td>:</td>
+                <td><input type="tel" name="phone" id="phone" pattern="[6-9]{1}[/d]{9}"></td>
+            </tr>
+            <tr>
+                <td>EMAIL ID</td>
+                <td>:</td>
+                <td><input type="email" name="email_id" id="email_id" 
+                    pattern="[a-z0-9._+%\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$" 
+                    title="@ and . mandatoty"></td>
+            </tr>
+            <tr>
+                <td>PASSWORD 1</td>
+                <td>:</td>
+                <td><input type="password" name="password_1" id="password_1"
+                    pattern="(?=.*/d)(?=.*[A-Z])(?=.*[a-z])"></td>
+            </tr>
+            <tr>
+                <td>PASSWORD 2</td>
+                <td>:</td>
+                <td><input type="password" name="password_2" id="password_2" pattern=".{8,}"></td>
+            </tr>
+            <tr>
+                <td>PIN CODE</td>
+                <td>:</td>
+                <td><input type="text" name="PIN_CODE" id="PIN_CODE" pattern="[0-9]{6}"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><center><input type="submit" value="submit"></center></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

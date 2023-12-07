@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        header{
+            background-color: orange;
+            height: 100px;
+        }
+        .parent{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color:brown;
+            height: 200px;
+        }
+        .mainparent{
+            display: flex;
+            flex-direction: column;
+        }
+        .leftparent{
+            margin: 10px;
+            background-color: white;
+            height: 30px;
+        }
+        .midparent{
+            background-color: blue;
+            height: 100px;
+            margin:10px;
+        }
+        .rightparent{
+            background-color: green;
+            height: 100px;
+            margin-top: 10px;
+        }
+        @media screen and (min-width:992px){
+
+            .mainparent{
+                display: flex;
+                flex-direction: row;
+            }
+            .parent{
+                width: 20%;
+                height: 600px;
+            }
+            .midparent1{
+
+                width: 60%;
+                height: 600px;
+            }
+            .rightparent{
+                width: 20%;
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="mainparent">
+    <div class="parent">
+        <div class="leftparent"></div>
+        <div class="leftparent"></div>
+        <div class="leftparent"></div>
+        <div class="leftparent"></div>
+    </div>
+    <div class="midparent1">
+    <div class="midparent"></div>
+    <div class="midparent"></div>
+    <div class="midparent"></div>
+    <div class="midparent"></div>
+    </div>
+    <div class="rightparent"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-rows: auto auto auto auto auto auto;
+            grid-template-columns: auto auto auto auto;
+            width: 100%;
+            height: 80vh;
+        }
+        .a{
+            text-align: center;
+            /* width: 100px;
+            height: 100px; */
+            color: white;
+            padding-left: 100px;
+            padding-top: 60px;
+        }
+        header{
+            background-color: aqua;
+            /* grid-column-start: 2;
+            grid-column-end: 4; */
+            grid-column: 2/4;
+        }
+        aside{
+            background-color: blue;
+            grid-row: 1/5;
+        }
+        section{
+            background-color: yellow;
+            grid-column: 2/3;
+        }
+        .main1{
+            background-color: green;
+            grid-column: 3/4;
+        }
+        nav{
+            background-color: yellowgreen;
+            grid-column: 2/4;
+        }
+        .main2{
+            background-color: gold;
+            grid-column:2/4 ;
+        }
+        footer{
+            background-color: black;
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <aside class="a"> ASIDE </aside>
+    <header class="a">
+        HEADER 
+    </header>
+    <section class="a">SECTION  </section>
+    <main class="main1 a">MAIN1 </main>
+    <nav>NAV </nav>
+    <main class="main2 a">MAIN2 </main>
+    <footer class="a">FOOTER </footer>
+</body>
+</html>
